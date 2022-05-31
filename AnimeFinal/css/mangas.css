@@ -1,0 +1,60 @@
+#main {
+    display: flex;
+    height: 64vh;
+}
+
+#main #background {
+    position: absolute;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+    height: 65vh;
+    width: 100vw;
+}
+
+#main #background iframe {
+    border: 0px;
+    width: 50vw;
+}
+
+#main #manga {
+    width: 80vw;
+    margin-left: 10vw;
+    text-align: center;
+    color: white;
+    background-color: rgba(0.5, 0.5, 0.5, 0.8);
+}
+
+#main #manga name {
+    font-size: 30px;
+}
+
+#main #manga japname {
+    font-size: 21px;
+}
+
+#main #manga author, #main #manga year {
+    font-size: 18px;
+}
+
+#main #manga author {
+    margin-right: 50px;
+}
+
+#main #manga author span {
+    margin-left: 50px;
+}
+
+#main #manga description {
+    font-size: 15px;
+    margin: 0px 10px;
+}
+
+.rate {
+    color: white;
+    background-color: gold;
+    font-size: 20px;
+    border: 3px solid gold;
+    border-radius: 5px;
+}

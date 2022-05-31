@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anime</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/mangas.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <style>
+        #main {
+            height: 70vh;
+            width: 100%;
+        }
+
+        #main #background {
+            position: absolute;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            z-index: -1;
+            height: 70vh;
+            width: 100%;
+        }
+
+        #main #background iframe {
+            border: 0;
+            width: 50vw;
+        }
+
+        #main #manga {
+            height: 70vh;
+            width: 80vw;
+            margin-left: 10vw;
+            text-align: center;
+            color: white;
+            background-color: rgba(0.5, 0.5, 0.5, 0.8);
+        }
+
+        #main #manga name {
+            font-size: 30px;
+        }
+
+        #main #manga author {
+            font-size: 18px;
+            margin-right: 50px;
+        }
+
+        #main #manga author span {
+            margin-left: 50px;
+        }
+
+        #main #manga description {
+            font-size: 15px;
+            margin: 0px 10px;
+        }
+
+        .rate {
+            color: white;
+            background-color: gold;
+            font-size: 20px;
+            border: 3px solid gold;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div id="bottom-nav">
+        <ul><a href="/"><img src="/header/logotype.png" width="100"></a></ul>
+        <ul class="nonli">
+            <li><a class="menu" href="/">HOME</a></li>
+        </ul>
+        <ul class="nonli">
+            {{ if eq .User.Type "" }}
+            <li><a class="nonactive" href="/signup/">Sign up</a></li>
+            <li><a class="nonactive" href="/signin/">Sign in</a></li>
+            {{ else if eq .User.Type "weeb" }}
+            <li><a class="active" href="/signout">Sign out</a></li>
+            {{ else if eq .User.Type "god" }}
+            <li><a class="active" href="/new/">New anime</a></li>
+            <li><a class="active" href="/signout">Sign out</a></li>
+            {{ end }}
+        </ul>
+    </div>
+</header>
+<div id="main">
+    <div id="background" style="background-image: url({{ .Manga.Background }});">
+        <iframe src="https://www.youtube.com/embed/{{ .Manga.Opening }}?playlist={{ .Manga.Opening }}&loop=1&autoplay=1&controls=0"></iframe>
+    </div>
+    <div id="manga"><br>
+        <name>{{ .Manga.Title }}</name>
+        <br><br>
+        <author>{{ .Manga.Author }}</author>
+        <span>Rating: {{ .Manga.Rating }} out of 5</span><br><br>
+        <description>{{ .Manga.Description }}</description>
+        <br>
+        {{ if eq .User.Type "weeb" }}
+        <form id="rateMangaForm" action="/rate" method="post">
+            <div>
+                <input style="display: none;" name="title" value="{{ .Manga.Title }}">
+                <p>
+                    1
+                    <input type="radio" value="1" name="rating">
+                    <input type="radio" value="2" name="rating">
+                    <input type="radio" value="3" name="rating">
+                    <input type="radio" value="4" name="rating">
+                    <input type="radio" value="5" name="rating">
+                    5
+                </p>
+            </div>
+            <input class="rate" type="submit" id="rateMangaBtn" value="RATE">
+        </form>
+        {{ else }}
+        {{ end }}
+    </div>
+</div>
+
+<footer>
+    <div>
+        <ul class="top-footer">
+            <a href="/">
+                <li>About us</li>
+            </a>
+            <a href="/">
+                <li>FAQ</li>
+            </a>
+            <a href="/">
+                <li>Contacts</li>
+            </a>
+        </ul>
+    </div>
+    <div>
+        <ul class="bottom-footer">
+            <li>&copy Torgyn Muratovna</li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,65 @@
+[
+ {
+  "title": "One Piece",
+  "author": "Eiichiro Oda",
+  "image": "/manga/1.jpg",
+  "background": "/manga/background_1.jpg",
+  "description": "One Piece (stylized in all caps) is a Japanese manga series written and illustrated by Eiichiro Oda. It has been serialized in Shueisha's shōnen manga magazine Weekly Shōnen Jump since July 1997, with its individual chapters compiled into 101 tankōbon volumes as of December 2021. The story follows the adventures of Monkey D. Luffy, a boy whose body gained the properties of rubber after unintentionally eating a Devil Fruit. With his crew of pirates, named the Straw Hat Pirates, Luffy explores the Grand Line in search of the world's ultimate treasure known as \"One Piece\" in order to become the next King of the Pirates.",
+  "rating": 5,
+  "opening": "4M8zQT1tn3A"
+ },
+ {
+  "title": "Demon Slayer: Kimetsu no Yaiba",
+  "author": "Koyoharu Gotouge",
+  "image": "/manga/2.jpg",
+  "background": "/manga/background_2.png",
+  "description": "Demon Slayer: Kimetsu no Yaiba (鬼滅の刃, Kimetsu no Yaiba, \"Blade of Demon Destruction\"[4]) is a Japanese manga series written and illustrated by Koyoharu Gotouge. It follows teenage Tanjiro Kamado, who strives to become a demon slayer after his family was slaughtered and his younger sister Nezuko turned into a demon. It was serialized in Shueisha's shōnen manga magazine Weekly Shōnen Jump from February 2016 to May 2020, with its chapters collected in twenty-three tankōbon volumes. It has been published in English by Viz Media and simultaneously published by Shueisha on their Manga Plus platform.",
+  "rating": 3.6,
+  "opening": "jiJu4K2jems"
+ },
+ {
+  "title": "Naruto",
+  "author": "Masashi Kishimoto",
+  "image": "/manga/3.jpg",
+  "background": "/manga/background_3.jpg",
+  "description": "Naruto (Japanese: NARUTOナルト) is a Japanese manga series written and illustrated by Masashi Kishimoto. It tells the story of Naruto Uzumaki, a young ninja who seeks recognition from his peers and dreams of becoming the Hokage, the leader of his village. The story is told in two parts – the first set in Naruto's pre-teen years, and the second in his teens. The series is based on two one-shot manga by Kishimoto: Karakuri (1995), which earned Kishimoto an honorable mention in Shueisha's monthly Hop Step Award the following year, and Naruto (1997).",
+  "rating": 5,
+  "opening": "oJwMiU3RJmA"
+ },
+ {
+  "title": "Hunter × Hunter",
+  "author": "Yoshihiro Togashi",
+  "image": "/manga/4.jpg",
+  "background": "/manga/background_4.jpg",
+  "description": "Hunter × Hunter (pronounced \"hunter hunter\") is a Japanese manga series written and illustrated by Yoshihiro Togashi. It has been serialized in Shueisha's Weekly Shōnen Jump since March 1998, although the manga has frequently gone on extended hiatuses since 2006. Its chapters have been collected in 36 tankōbon volumes as of October 2018. The story focuses on a young boy named Gon Freecss who discovers that his father, who left him at a young age, is actually a world-renowned Hunter, a licensed professional who specializes in fantastical pursuits such as locating rare or unidentified animal species, treasure hunting, surveying unexplored enclaves, or hunting down lawless individuals. Gon departs on a journey to become a Hunter and eventually find his father. Along the way, Gon meets various other Hunters and encounters the paranormal.",
+  "rating": 4,
+  "opening": "3wQiyOmAUOA"
+ },
+ {
+  "title": "Shaman King",
+  "author": "Hiroyuki Takei",
+  "image": "/manga/5.jpg",
+  "background": "/manga/background_5.jpg",
+  "description": "Shaman King (Japanese: シャーマンキング, Hepburn: Shāman Kingu) is a Japanese manga series written and illustrated by Hiroyuki Takei. It follows the adventures of Yoh Asakura as he attempts to hone his shaman skills to become the Shaman King by winning the Shaman Fight. Takei chose shamanism as the main theme of the series because he wanted a topic that had never been attempted before in manga. The Shaman King manga was originally serialized in Shueisha's Weekly Shōnen Jump between June 1998 and August 2004. The individual chapters were collected and released in 32 tankōbon volumes. In 2017, Kodansha acquired the rights to the series and re-launched it on 35 e-book volumes in 2018, also published in print since 2020.",
+  "rating": 5,
+  "opening": "9wUCmq5v_oQ"
+ },
+ {
+  "title": "Attack on Titan",
+  "author": "Hajime Isayama",
+  "image": "/manga/6.jpg",
+  "background": "/manga/background_6.jpg",
+  "description": "Attack on Titan (Japanese: 進撃の巨人, Hepburn: Shingeki no Kyojin, lit. \"The Advancing Giants\") is a Japanese manga series written and illustrated by Hajime Isayama. It is set in a world where humanity lives inside cities surrounded by three enormous walls that protect them from the gigantic man-eating humanoids referred to as Titans; the story follows Eren Yeager, who vows to exterminate the Titans after a Titan brings about the destruction of his hometown and the death of his mother. Attack on Titan was serialized in Kodansha's monthly shōnen manga magazine Bessatsu Shōnen Magazine from September 2009 to April 2021, with its chapters collected in 34 tankōbon volumes.",
+  "rating": 0,
+  "opening": "vcPgZRXBt-Y"
+ },
+ {
+  "title": "Fairy Tail",
+  "author": "Hiro Mashima",
+  "image": "/manga/7.jpg",
+  "background": "/manga/background_7.png",
+  "description": "Fairy Tail is a Japanese manga series written and illustrated by Hiro Mashima. It was serialized in Kodansha's Weekly Shōnen Magazine from August 2006 to July 2017, with the individual chapters collected and published into 63 tankōbon volumes. The story follows the adventures of Natsu Dragneel, a member of the popular wizard[a] guild Fairy Tail, as he searches the fictional world of Earth-land for the dragon Igneel.",
+  "rating": 0,
+  "opening": "9jvVBVcZ0-Y"
+ }
+]

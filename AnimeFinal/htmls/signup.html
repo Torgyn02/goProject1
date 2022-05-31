@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign up</title>
+    <link rel="stylesheet" type="text/css" href="/css/login.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div id="bottom-nav">
+        <ul><a href="/"><img src="/header/logotype.png" width="100"></a></ul>
+        <ul class="nonli">
+            <li><a class="menu" href="/">HOME</a></li>
+        </ul>
+        <ul class="nonli">
+            {{ if eq .Type "" }}
+            <li><a class="nonactive" href="/signup/">Sign up</a></li>
+            <li><a class="nonactive" href="/signin/">Sign in</a></li>
+            {{ else if eq .Type "weeb" }}
+            <li><a class="active" href="/signout">Sign out</a></li>
+            {{ else if eq .Type "god" }}
+            <li><a class="active" href="/new/">New anime</a></li>
+            <li><a class="active" href="/signout">Sign out</a></li>
+            {{ end }}
+        </ul>
+    </div>
+</header>
+<div id="login">
+    {{ if eq .Type "" }}
+    <form id="signupform" action="/signup" method="post">
+        <fieldset>
+            <legend>Sign up form</legend>
+            <div class="line">
+                <div class="label"><label>Name:</label></div>
+                <input type="text" name="name" placeholder="username" required="required"></div>
+            <div class="line">
+                <div class="label"><label>Password:</label></div>
+                <input type="password" name="password" placeholder="password" required="required"></div>
+            <div class="line">
+                <div class="label"><label>Re-password:</label></div>
+                <input type="password" name="repassword" placeholder="password" required="required"></div>
+            <div class="line"><input type="submit" id="signupBtn" value="Sign up"></div>
+        </fieldset>
+        <img src="/header/logo1.png" height="375px">
+    </form>
+    {{ else }}
+    {{ end }}
+</div>
+<footer>
+    <div>
+        <ul class="top-footer">
+            <a href="/">
+                <li>About us</li>
+            </a>
+            <a href="/">
+                <li>FAQ</li>
+            </a>
+            <a href="/">
+                <li>Contacts</li>
+            </a>
+        </ul>
+    </div>
+    <div>
+        <ul class="bottom-footer">
+            <li>&copy Torgyn Muratovna</li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>

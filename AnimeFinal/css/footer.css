@@ -1,0 +1,38 @@
+footer {
+    background-color: grey;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0px;
+}
+
+footer div ul li {
+    display: inline;
+    font-size: 15px;
+    color: white;
+}
+
+footer div ul a {
+    text-decoration: none;
+}
+
+footer div ul a li {
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+}
+
+.top-footer {
+    width: 30vw;
+    justify-content: space-between;
+}
+
+.bottom-footer {
+    justify-content: center;
+}

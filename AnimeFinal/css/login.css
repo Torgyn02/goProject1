@@ -1,0 +1,40 @@
+#login {
+    height: 70vh;
+}
+
+#login form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#login form fieldset {
+    padding: 20px;
+    border-color: #7dccff;
+}
+
+#login form fieldset legend {
+    font-size: 25px;
+}
+
+.line {
+    margin-left: 1vw;
+    font-size: 15px;
+}
+
+.line input {
+    font-size: 15px;
+    margin: 5px 5px;
+    padding: 5px;
+    width: 265px;
+}
+
+.line input[type=submit] {
+    background-color: #7bf02d;
+    border-color: #7bf02d;
+    width: 280px;
+}
+
+form img {
+    margin-bottom: -20px;
+}

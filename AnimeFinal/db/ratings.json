@@ -1,0 +1,47 @@
+[
+ {
+  "user_name": "azamat",
+  "manga_title": "Naruto",
+  "rating": 5
+ },
+ {
+  "user_name": "azamat",
+  "manga_title": "One Piece",
+  "rating": 5
+ },
+ {
+  "user_name": "bexultan",
+  "manga_title": "Demon Slayer: Kimetsu no Yaiba",
+  "rating": 5
+ },
+ {
+  "user_name": "azamat",
+  "manga_title": "Demon Slayer: Kimetsu no Yaiba",
+  "rating": 3
+ },
+ {
+  "user_name": "azamat",
+  "manga_title": "Shaman King",
+  "rating": 5
+ },
+ {
+  "user_name": "darkhan",
+  "manga_title": "Demon Slayer: Kimetsu no Yaiba",
+  "rating": 0
+ },
+ {
+  "user_name": "darkhan",
+  "manga_title": "Hunter × Hunter",
+  "rating": 4
+ },
+ {
+  "user_name": "dana",
+  "manga_title": "Demon Slayer: Kimetsu no Yaiba",
+  "rating": 5
+ },
+ {
+  "user_name": "ako",
+  "manga_title": "Demon Slayer: Kimetsu no Yaiba",
+  "rating": 5
+ }
+]

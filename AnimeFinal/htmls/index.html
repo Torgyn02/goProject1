@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div id="bottom-nav">
+        <ul><a href="/"><img src="/header/logotype.png" width="100"></a></ul>
+        <ul class="nonli">
+            <li><a class="menu" href="/">HOME</a></li>
+        </ul>
+        <ul class="nonli">
+            {{ if eq .User.Type "" }}
+            <li><a class="nonactive" href="/signup/">Sign up</a></li>
+            <li><a class="nonactive" href="/signin/">Sign in</a></li>
+            {{ else if eq .User.Type "weeb" }}
+            <li><a class="active" href="/signout">Sign out</a></li>
+            {{ else if eq .User.Type "god" }}
+            <li><a class="active" href="/new/">New anime</a></li>
+            <li><a class="active" href="/signout">Sign out</a></li>
+            {{ end }}
+        </ul>
+    </div>
+</header>
+<center>
+<div id="content">
+    {{ range .Mangas }}
+    <form action="/anime/" method="get">
+        <div class="mangas" style="background-image: url({{ .Image }})">
+            <center>
+                <p><b>{{ .Title }}</b><br>{{ .Author }}</p>
+                <input type="text" value="{{ .Title }}" name="title" style="display: none;">
+                <input type="submit" value="See" class="button-5">
+            </center>
+        </div>
+    </form>
+    {{ else }}
+    {{ end }}
+</div>
+</center>
+<footer>
+    <div>
+        <ul class="top-footer">
+            <a href="/">
+                <li>About us</li>
+            </a>
+            <a href="/">
+                <li>FAQ</li>
+            </a>
+            <a href="/">
+                <li>Contacts</li>
+            </a>
+        </ul>
+    </div>
+    <div>
+        <ul class="bottom-footer">
+            <li>&copy Torgyn Muratovna</li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>

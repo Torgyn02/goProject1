@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+header {
+    height: 15vh;
+}
+
+.nonli {
+    list-style-type: none;
+}
+
+.nonli li {
+    display: inline;
+    margin-left: 50px;
+}
+
+.nonli li a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+.menu:hover {
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.nonactive:hover {
+    color: #7bf02d;
+    border-bottom: 2px solid #7bf02d;
+}
+
+.active:hover {
+    color: #059bfc;
+    border-color: #059bfc;
+}
+
+#bottom-nav {
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    background-color: #7dccff;
+}

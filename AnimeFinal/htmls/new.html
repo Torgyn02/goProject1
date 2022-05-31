@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>New</title>
+    <link rel="stylesheet" type="text/css" href="/css/login.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <style>
+        #login {
+            height: auto;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div id="bottom-nav">
+        <ul><a href="/"><img src="/header/logotype.png" width="100"></a></ul>
+        <ul class="nonli">
+            <li><a class="menu" href="/">HOME</a></li>
+        </ul>
+        <ul class="nonli">
+            {{ if eq .Type "" }}
+            <li><a class="nonactive" href="/signup/">Sign up</a></li>
+            <li><a class="nonactive" href="/signin/">Sign in</a></li>
+            {{ else if eq .Type "weeb" }}
+            <li><a class="active" href="/signout">Sign out</a></li>
+            {{ else if eq .Type "god" }}
+            <li><a class="active" href="/new/">New anime</a></li>
+            <li><a class="active" href="/signout">Sign out</a></li>
+            {{ end }}
+        </ul>
+    </div>
+</header>
+<div id="login">
+    {{ if eq .Type "god" }}
+    <form id="signinform" action="/new" method="post">
+        <fieldset>
+            <legend>New anime form</legend>
+            <div class="line">
+                <div class="label"><label>Title:</label></div>
+                <input type="text" name="title" placeholder="title" required="required">
+            </div>
+            <div class="line">
+                <div class="label"><label>Author:</label></div>
+                <input type="text" name="author" placeholder="author" required="required">
+            </div>
+            <div class="line">
+                <div class="label"><label>Image:</label></div>
+                <input type="text" name="image" placeholder="image" required="required">
+            </div>
+            <div class="line">
+                <div class="label"><label>Background:</label></div>
+                <input type="text" name="background" placeholder="background" required="required">
+            </div>
+            <div class="line">
+                <div class="label"><label>Description:</label></div>
+                <textarea name="description" cols="35" rows="10" required="required"></textarea>
+            </div>
+            <div class="line">
+                <div class="label"><label>Opening:</label></div>
+                <input type="text" name="opening" placeholder="opening" required="required">
+            </div>
+            <div class="line"><input type="submit" id="signupBtn" value="Create"></div>
+        </fieldset>
+        <img src="/header/logo1.png" height="375px">
+    </form>
+    {{ else }}
+    {{ end }}
+</div>
+<footer>
+    <div>
+        <ul class="top-footer">
+            <a href="/">
+                <li>About us</li>
+            </a>
+            <a href="/">
+                <li>FAQ</li>
+            </a>
+            <a href="/">
+                <li>Contacts</li>
+            </a>
+        </ul>
+    </div>
+    <div>
+        <ul class="bottom-footer">
+            <li>&copy Torgyn Muratovna</li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>
